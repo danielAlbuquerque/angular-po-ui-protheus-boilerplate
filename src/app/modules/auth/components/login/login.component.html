@@ -1,0 +1,16 @@
+<div class="po-wrapper">
+    <po-page-login
+        p-hide-remember-user
+        (p-login-submit)="onLogin($event)"
+        [p-login-errors]="loginErrors"
+        p-logo="https://www.erpserv.com.br/wp-content/uploads/2020/09/AF-LOGO-ERP-01-e1600786250601.png"
+        [p-loading]="isPageBusy"
+        p-product-name="Product Name"
+    >
+    </po-page-login>
+
+    <po-modal-password-recovery
+        (p-submit)="onSendCodeRecovery($event)">
+    </po-modal-password-recovery>
+
+</div>
